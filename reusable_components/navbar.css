@@ -11,9 +11,10 @@ nav {
   );
   padding: 0 1rem;
   box-sizing: border-box;
+  font-family: sans-serif;
 }
 nav img {
-  width: 60px;
+  width: 3%;
 }
 
 nav a {

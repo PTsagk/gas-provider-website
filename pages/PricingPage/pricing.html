@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../../reusable_components/navbar.css" />
+    <link rel="stylesheet" href="pricing.css" />
+    <link rel="stylesheet" href="../../reusable_components/footer.css" />
+    <link rel="icon" href="../../reusable_components/logo.png" />
+    <title>PUREGAS</title>
+  </head>
+  <body>
+    <nav>
+      <img src="../../reusable_components/logo.png" alt="logo" />
+      <form class="links">
+        <a href="/">Home</a>
+        <a href="../ProfilePage/profile.html">Profile</a>
+        <a href="./pricing.html">Pricing</a>
+        <a href="#">Contact</a>
+        <a href="#">Admin</a>
+      </form>
+    </nav>
+    <section class="calculate-cost">
+      <h1 class="title">Υπολογισμός Κόστους</h1>
+      <form action="">
+        <label for="kWh">Εισαγωγή αριθμού kWh: </label>
+        <input type="number" id="kWh" />
+        <label for="days">Εισαγωγη ημερών:</label>
+        <input type="number" id="days" />
+        <label for="m2">Εισαγωγή τετραγωνικών μέτρων: </label>
+        <input type="number" id="m2" />
+        <button type="submit">Υπολογισμός</button>
+      </form>
+    </section>
+    <section class="cost-calculation">
+      <h1 class="title">Πως υπολογίζεται το κόστος</h1>
+      <div class="tables">
+        <table>
+          <tr>
+            <th>
+              Κατανάλωση<br />
+              σε kWh
+            </th>
+            <th>
+              Κόστος Ενέργειας<br />
+              (€/kWh)
+            </th>
+            <th>
+              Υπηρεσίες Κοινής Ωφέλειας<br />
+              (PUS) (€/kWh)
+            </th>
+          </tr>
+          <tr>
+            <td>0-1600</td>
+            <td>0,00623 € / kWh</td>
+            <td>0,01315 € / kWh</td>
+          </tr>
+          <tr>
+            <td>1601-2000</td>
+            <td>0,00768 € / kWh</td>
+            <td>0,01480 € / kWh</td>
+          </tr>
+          <tr>
+            <td>>2000</td>
+            <td>0,00915 € / kWh</td>
+            <td>0,01625 € / kWh</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th>
+              Τετραγωνικά<br />
+              Μέτρα m2
+            </th>
+            <th>
+              Χρεώσεις<br />
+              Δήμου (€/m2)
+            </th>
+          </tr>
+          <tr>
+            <td>0-50</td>
+            <td>0,12 € / m2</td>
+          </tr>
+          <tr>
+            <td>50-90</td>
+            <td>0,20 € / m2</td>
+          </tr>
+          <tr>
+            <td>>90</td>
+            <td>0,31 € / m2</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <footer>
+      <h1>Στοιχεία Επικοινωνίας</h1>
+      <div class="footer-container">
+        <div class="info-container">
+          <a class="info">
+            <i class="fa-solid fa-phone"></i>
+            <span>6949539459</span>
+          </a>
+          <a class="info">
+            <i class="fa-solid fa-envelope"></i>
+            <span>gasstation@gmail.com</span>
+          </a>
+          <a class="info">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Καραολή και Δημητρίου 80</span>
+          </a>
+        </div>
+
+        <iframe
+          frameborder="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%CE%9A%CE%B1%CF%81%CE%B1%CE%BF%CE%BB%CE%AE%20%CE%BA%CE%B1%CE%B9%20%CE%94%CE%B7%CE%BC%CE%B7%CF%84%CF%81%CE%AF%CE%BF%CF%85%2080+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        ></iframe>
+      </div>
+    </footer>
+  </body>
+</html>
