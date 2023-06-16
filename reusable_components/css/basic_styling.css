@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+/* Title for each section */
+.title {
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  white-space: nowrap;
+}
+
+/* Every section will have min height 60vh */
+section {
+  min-height: 60vh;
+}
